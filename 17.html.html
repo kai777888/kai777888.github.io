@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>加入我們的花藝名單</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .header {
+      text-align: center;
+    }
+    .header img {
+      max-width: 100px;
+      border-radius: 50%;
+    }
+    .header h1 {
+      color: #333;
+      margin: 20px 0 10px;
+    }
+    .header p {
+      color: #777;
+      font-size: 1rem;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #555;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .cta-button {
+      background-color: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .cta-button:hover {
+      background-color: #ff4a3a;
+    }
+    .benefits {
+      margin-top: 20px;
+      padding: 10px;
+      background: #fdf4f4;
+      border-radius: 5px;
+      color: #555;
+    }
+    .benefits ul {
+      padding-left: 20px;
+    }
+    .footer {
+      margin-top: 20px;
+      text-align: center;
+      color: #777;
+      font-size: 0.8rem;
+    }
+    .footer a {
+      color: #ff6f61;
+      text-decoration: none;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://via.placeholder.com/100" alt="花店Logo">
+      <h1>🌸 專屬你的花香驚喜 🌸</h1>
+      <p>留下聯絡資訊，即可獲得免費迷你花束或首次購物9折優惠！</p>
+    </div>
+    <form>
+      <div class="form-group">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" placeholder="請輸入您的名字" required>
+      </div>
+      <div class="form-group">
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email" placeholder="請輸入您的Email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">手機號碼（選填）：</label>
+        <input type="tel" id="phone" name="phone" placeholder="請輸入您的聯絡電話">
+      </div>
+      <div class="form-group">
+        <label for="birthday">生日（選填）：</label>
+        <input type="date" id="birthday" name="birthday">
+      </div>
+      <button type="submit" class="cta-button">立即領取優惠！</button>
+    </form>
+    <div class="benefits">
+      <p>💌 加入我們的名單，你將獲得：</p>
+      <ul>
+        <li>✔️ 免費迷你花束領取機會</li>
+        <li>✔️ 首次購物9折優惠</li>
+        <li>✔️ 獨家花藝教學活動邀約</li>
+        <li>✔️ 更多專屬會員福利驚喜</li>
+      </ul>
+    </div>
+    <div class="footer">
+      <p>✨ 我們非常重視您的隱私，所有資訊僅用於活動通知與優惠推廣，不會洩露給第三方。</p>
+      <p>📍 <a href="#">[花店名稱]</a> - 用花點綴每一個重要時刻。</p>
+    </div>
+  </div>
+</body>
+</html>
