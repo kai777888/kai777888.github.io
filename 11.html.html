@@ -3,35 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>花店名單收集頁</title>
+    <title>完美花卉設計 - 花店專屬優惠</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>免費下載：如何選擇與搭配完美花卉的完整指南</h1>
-            <p class="subheading">學會如何為每個特殊場合挑選適合的花卉設計，讓你成為花卉搭配專家！</p>
+        <!-- 標題區域 -->
+        <header class="hero">
+            <h1>打造您的專屬花卉設計，點亮每個重要時刻！</h1>
+            <p>無論是生日、紀念日，還是婚禮，我們為您提供獨特的花卉設計，帶來無與倫比的美麗與驚喜。</p>
+            <a href="#purchase" class="cta-btn">立即選購</a>
         </header>
 
-        <section class="content">
-            <img src="flower-image.jpg" alt="花卉設計" class="flower-image">
-            
-            <div class="cta">
-                <h2>立即下載你的免費指南</h2>
-                <p>輸入你的電子郵件，馬上獲得我們的花卉設計指南，並學會挑選與搭配最美的花卉！</p>
-
-                <form action="submit-form.php" method="POST">
-                    <label for="name">名字（選填）</label>
-                    <input type="text" id="name" name="name">
-
-                    <label for="email">電子郵件地址</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <button type="submit" class="btn-submit">立即下載</button>
-                </form>
-
-                <p class="privacy-policy">我們尊重你的隱私，並承諾不會將你的資料外洩。<a href="/privacy-policy" target="_blank">隱私政策</a></p>
+        <!-- 產品介紹 -->
+        <section class="product-intro">
+            <h2>為您精心挑選的花卉設計</h2>
+            <p>我們的花卉設計專為不同場合精心搭配，適合送給親朋好友，或是為您的家增添色彩與活力。</p>
+            <div class="product-images">
+                <img src="flower-bouquet1.jpg" alt="花卉設計 1">
+                <img src="flower-bouquet2.jpg" alt="花卉設計 2">
             </div>
+        </section>
+
+        <!-- 顧客見證 -->
+        <section class="testimonials">
+            <h2>顧客的聲音</h2>
+            <blockquote>
+                <p>「這束花不僅美麗，還給我們的婚禮增添了無比浪漫的氣氛。每一朵花的搭配都恰到好處！」</p>
+                <footer>- 李小姐</footer>
+            </blockquote>
+            <blockquote>
+                <p>「每次送出這些精緻的花束，都能讓我的朋友感到驚喜，真的是送禮的不二選擇！」</p>
+                <footer>- 張先生</footer>
+            </blockquote>
+        </section>
+
+        <!-- 產品價值與優惠 -->
+        <section class="pricing">
+            <h2>專屬優惠：立即購買可享 10% 折扣</h2>
+            <p>立即下單，使用優惠碼「FLOWER10」可享 10% 折扣，限時優惠，趕快搶購！</p>
+            <div class="product-info">
+                <p>每一束花卉設計都是由我們的專業設計師精心挑選和搭配，保證新鮮且獨特。</p>
+                <ul>
+                    <li>新鮮花卉，保證每一朵都精緻無比</li>
+                    <li>多種花卉設計，適合不同場合</li>
+                    <li>專屬定制服務，滿足您的需求</li>
+                </ul>
+            </div>
+            <div class="cta-section">
+                <a href="#purchase" class="cta-btn">立即購買，享受折扣！</a>
+            </div>
+        </section>
+
+        <!-- 常見問題 -->
+        <section class="faq">
+            <h2>常見問題</h2>
+            <div class="faq-item">
+                <h3>Q: 花卉設計會有多少天的保鮮期？</h3>
+                <p>A: 我們的花卉設計通常能保持新鮮 5 至 7 天，根據花卉種類和環境不同而有所差異。</p>
+            </div>
+            <div class="faq-item">
+                <h3>Q: 我可以選擇定制花卉設計嗎？</h3>
+                <p>A: 當然可以，我們提供專屬定制服務，讓您根據個人需求選擇花卉種類與搭配。</p>
+            </div>
+        </section>
+
+        <!-- 購買區 -->
+        <section id="purchase" class="purchase-section">
+            <h2>立刻選購您喜愛的花卉設計！</h2>
+            <form action="submit-order.php" method="POST">
+                <label for="name">姓名</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">電子郵件地址</label>
+                <input type="email" id="email" name="email" required>
+                <label for="product">選擇花卉設計</label>
+                <select id="product" name="product">
+                    <option value="flower1">花卉設計 1</option>
+                    <option value="flower2">花卉設計 2</option>
+                </select>
+                <button type="submit" class="cta-btn">立即購買</button>
+            </form>
+        </section>
+
+        <!-- 保障與退貨政策 -->
+        <section class="guarantee">
+            <h2>100% 滿意保障</h2>
+            <p>我們承諾，如果您對花卉設計不滿意，將提供退貨或更換服務，讓您的購物體驗無後顧之憂。</p>
         </section>
     </div>
 </body>
